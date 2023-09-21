@@ -1,0 +1,29 @@
+.about_img{
+    position: relative;
+    background: url(./Assets/icons8-user-100.png);
+    font-size: larger;
+    height: 300px;
+    width: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.about_ring{
+    position: absolute;
+    /* background: radial-gradient(at center center, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 70%);
+    border-radius: 50%;
+    box-shadow: rgba(255, 255, 255, 0.3) 0px 20px 30px inset; */
+    border-radius: 50%;
+	
+	box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+    height: 300px;
+    width: 300px;
+    margin-top: -300px;
+    margin-left: -10px;
+    animation: ring-animation 3s infinite linear;
+}
+@keyframes ring-animation{
+    to{
+        transform: rotateY(180deg);
+    }
+}
